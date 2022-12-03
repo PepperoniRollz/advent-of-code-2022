@@ -19,22 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\days\DayThree.cpp" />
     <ClCompile Include="src\days\DayOne.cpp" />
     <ClCompile Include="src\days\DayTwo.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\DayThree.h" />
     <ClInclude Include="src\headers\DayOne.h" />
     <ClInclude Include="src\headers\DayTwo.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\data\day-one-part-one.txt">
+    <Text Include="src\data\day-one.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </Text>
-    <Text Include="src\data\day-two-part-one.txt" />
+    <Text Include="src\data\day-three.txt" />
+    <Text Include="src\data\day-two.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

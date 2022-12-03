@@ -23,7 +23,7 @@ void DayOne::partOneSolution() {
 void DayOne::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
-	int32_t first, second, third;
+	int first, second, third;
 	first = second = third = INT32_MIN;
 	int totalCalories = 0;
 

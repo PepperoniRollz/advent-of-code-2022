@@ -3,14 +3,21 @@
 
 #include "DayOne.h"
 #include "DayTwo.h"
+#include "DayThree.h"
 
 int main() {
-	DayOne d1("./src/data/day-one-part-one.txt");
-
+	std::cout << "--- Day 1: Calorie Counting ---" << std::endl;
+	DayOne d1("./src/data/day-one.txt");
 	d1.partOneSolution();
 	d1.partTwoSolution();
 
-	DayTwo d2("./src/data/day-two-part-one.txt");
+	std::cout << "--- Day 2: Rock Paper Scissors ---" << std::endl;
+	DayTwo d2("./src/data/day-two.txt");
 	d2.partOneSolution();
 	d2.partTwoSolution();
+
+	std::cout << "--- Day 3: Rucksack Reorganization ---" << std::endl;
+	DayThree d3("./src/data/day-three.txt");
+	d3.partOneSolution();
+	d3.partTwoSolution();
 }
