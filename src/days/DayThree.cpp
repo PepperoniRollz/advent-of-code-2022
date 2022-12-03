@@ -1,6 +1,6 @@
 #include "DayThree.h"
 #include <map>
-#include <set>
+#include <unordered_set>
 
 DayThree::DayThree(std::string filename) : _filename(filename) {}
 
@@ -34,8 +34,8 @@ void DayThree::partTwoSolution() {
 	std::string line;
 	int sumPriorities = 0;
 	int group = 0;
-	std::set<char> setOne;
-	std::set<char> setTwo;
+	std::unordered_set<char> setOne;
+	std::unordered_set<char> setTwo;
 
 	inFile.open(_filename, std::ios_base::in);
 	while (std::getline(inFile, line)) {
