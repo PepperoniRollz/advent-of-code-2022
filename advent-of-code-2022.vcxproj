@@ -28,12 +28,13 @@
     <ClInclude Include="src\headers\DayTwo.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\data\day-one-part-one-data.txt">
+    <Text Include="src\data\day-one-part-one.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </Text>
+    <Text Include="src\data\day-two-part-one.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

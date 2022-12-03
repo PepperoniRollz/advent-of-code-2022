@@ -34,6 +34,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\data\day-one-part-one-data.txt" />
+    <Text Include="src\data\day-one-part-one.txt" />
+    <Text Include="src\data\day-two-part-one.txt" />
   </ItemGroup>
 </Project>

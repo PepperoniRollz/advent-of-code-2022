@@ -3,13 +3,14 @@
 
 #include "DayOne.h"
 #include "DayTwo.h"
-namespace fs = std::filesystem;
 
 int main() {
-	DayOne d1("./src/data/day-one-part-one-data.txt");
+	DayOne d1("./src/data/day-one-part-one.txt");
 
 	d1.partOneSolution();
 	d1.partTwoSolution();
 
-	//DayTwo d2(".\\data\\day-two-part-one-data.txt");
+	DayTwo d2("./src/data/day-two-part-one.txt");
+	d2.partOneSolution();
+	d2.partTwoSolution();
 }

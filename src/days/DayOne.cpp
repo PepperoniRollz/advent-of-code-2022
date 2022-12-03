@@ -17,7 +17,7 @@ void DayOne::partOneSolution() {
 		}
 		else totalCalories = 0;
 	}
-	std::cout << "max calories: " << maxCalories << std::endl;
+	std::cout << "Day 1-1: " << maxCalories << std::endl;
 }
 
 void DayOne::partTwoSolution() {
@@ -46,5 +46,5 @@ void DayOne::partTwoSolution() {
 			totalCalories = 0;
 		}
 	}
-	std::cout << "Sum of top 3: " << first + second + third << std::endl;
+	std::cout << "Day 1-2: " << first + second + third << std::endl;
 }
