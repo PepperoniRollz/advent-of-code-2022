@@ -40,8 +40,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\data\day-one.txt" />
-    <Text Include="src\data\day-two.txt" />
-    <Text Include="src\data\day-three.txt" />
+    <Text Include="src\data\day-1.txt" />
+    <Text Include="src\data\day-2.txt" />
+    <Text Include="src\data\day-3.txt" />
   </ItemGroup>
 </Project>
