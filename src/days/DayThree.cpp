@@ -33,33 +33,33 @@ void DayThree::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int sumPriorities = 0;
-	int group = 0;
-	std::unordered_set<char> setOne;
-	std::unordered_set<char> setTwo;
+	int elfInGroup = 0;
+	std::unordered_set<char> firstElfSack;
+	std::unordered_set<char> secondElfSack;
 
 	inFile.open(_filename, std::ios_base::in);
 	while (std::getline(inFile, line)) {
 		for (int i = 0; i < line.length(); i++) {
 			char item = line[i];
 
-			if (group == 0) {
-				setOne.insert(item);
+			if (elfInGroup == 0) {
+				firstElfSack.insert(item);
 			}
-			else if (group == 1) {
-				if (setOne.count(item)) {
-					setTwo.insert(item);
+			else if (elfInGroup == 1) {
+				if (firstElfSack.count(item)) {
+					secondElfSack.insert(item);
 				}
 			}
 			else {
-				if (setTwo.count(item)) {
+				if (secondElfSack.count(item)) {
 					sumPriorities += charToPriority(item);
-					setOne.clear();
-					setTwo.clear();
+					firstElfSack.clear();
+					secondElfSack.clear();
 					break;
 				}
 			}
 		}
-		group = (group + 1) % 3;
+		elfInGroup = (elfInGroup + 1) % 3;
 	}
 	std::cout << "Day 3-2: " << sumPriorities;
 }
