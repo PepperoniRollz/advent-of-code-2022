@@ -2,7 +2,6 @@
 #include <vector>
 #include <sstream>
 #include <string>
-#include <unordered_set>
 
 DayFour::DayFour(std::string filename) : _filename(filename) {}
 

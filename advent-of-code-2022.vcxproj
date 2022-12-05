@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\days\DayFive.cpp" />
     <ClCompile Include="src\days\DayThree.cpp" />
     <ClCompile Include="src\days\DayOne.cpp" />
     <ClCompile Include="src\days\DayTwo.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\DayFive.h" />
     <ClInclude Include="src\data\day-4.txt" />
     <ClInclude Include="src\headers\DayThree.h" />
     <ClInclude Include="src\headers\DayOne.h" />
@@ -40,6 +42,7 @@
     </Text>
     <Text Include="src\data\day-3.txt" />
     <Text Include="src\data\day-2.txt" />
+    <Text Include="src\data\day-5.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\days\DayFour.cpp">
