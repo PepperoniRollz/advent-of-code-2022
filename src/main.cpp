@@ -28,7 +28,7 @@ int main() {
 	d4.partOneSolution();
 	d4.partTwoSolution();
 
-	std::cout << "--- Day 4: Camp Cleanup ---" << std::endl;
+	std::cout << "--- Day 5: Supply Stacks ---" << std::endl;
 	DayFive d5("./src/data/day-5.txt");
 	d5.partOneSolution();
 	d5.partTwoSolution();
