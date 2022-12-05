@@ -44,22 +44,10 @@ bool DayFour::contains(std::vector<int> tokens) {
 }
 
 bool DayFour::overlaps(std::vector<int> tokens) {
-	bool overlaps = false;
-	std::unordered_set<int> set;
-	for (int i = tokens.at(0); i <= tokens.at(1); i++) {
-		set.insert(i);
-	}
-	for (int i = tokens.at(2); i <= tokens.at(3); i++) {
-		if (set.count(i)) { return true; }
-	}
-	set.clear();
-	for (int i = tokens.at(2); i <= tokens.at(3); i++) {
-		set.insert(i);
-	}
-	for (int i = tokens.at(0); i <= tokens.at(1); i++) {
-		if (set.count(i)) { return true; }
-		return overlaps;
-	}
+	return (tokens.at(0) <= tokens.at(2) && tokens.at(1) >= tokens.at(2))
+		|| (tokens.at(0) <= tokens.at(3) && tokens.at(1) >= tokens.at(3))
+		|| (tokens.at(2) <= tokens.at(0) && tokens.at(3) >= tokens.at(0))
+		|| (tokens.at(2) <= tokens.at(1) && tokens.at(3) >= tokens.at(1));
 }
 
 void DayFour::tokenizer(std::vector<int>& tokens, std::string line) {
