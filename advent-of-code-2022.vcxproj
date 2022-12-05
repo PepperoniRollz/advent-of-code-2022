@@ -25,9 +25,11 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\data\day-4.txt" />
     <ClInclude Include="src\headers\DayThree.h" />
     <ClInclude Include="src\headers\DayOne.h" />
     <ClInclude Include="src\headers\DayTwo.h" />
+    <ClInclude Include="src\headers\DayFour.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\data\day-1.txt">
@@ -38,6 +40,14 @@
     </Text>
     <Text Include="src\data\day-3.txt" />
     <Text Include="src\data\day-2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\days\DayFour.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
