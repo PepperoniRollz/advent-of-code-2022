@@ -3,7 +3,6 @@
 #include <string>
 #include<iostream>
 #include<vector>
-#include<stack>
 class DayFive {
 public:
 	DayFive(std::string);

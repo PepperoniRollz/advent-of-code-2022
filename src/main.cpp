@@ -6,6 +6,7 @@
 #include "DayThree.h"
 #include "DayFour.h"
 #include "DayFive.h"
+#include "DaySix.h"
 
 int main() {
 	std::cout << "--- Day 1: Calorie Counting ---" << std::endl;
@@ -32,4 +33,9 @@ int main() {
 	DayFive d5("./src/data/day-5.txt");
 	d5.partOneSolution();
 	d5.partTwoSolution();
+
+	std::cout << "--- Day 6: Tuning Trouble ---" << std::endl;
+	DaySix d6("./src/data/day-6.txt");
+	d6.partOneSolution();
+	d6.partTwoSolution();
 }

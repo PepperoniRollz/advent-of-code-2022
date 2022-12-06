@@ -61,7 +61,7 @@ void DayThree::partTwoSolution() {
 		}
 		elfInGroup = (elfInGroup + 1) % 3;
 	}
-	std::cout << "Day 3-2: " << sumPriorities;
+	std::cout << "Day 3-2: " << sumPriorities << std::endl;
 }
 
 int DayThree::charToPriority(char c) {
