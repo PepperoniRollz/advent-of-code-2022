@@ -1,10 +1,6 @@
 #include "DaySix.h"
-#include <sstream>
 #include <string>
-#include <unordered_set>
-#include <deque>
 #include <map>
-#include <stdexcept>
 DaySix::DaySix(std::string filename) {
 	_filename = filename;
 }
