@@ -20,8 +20,9 @@ public:
 
 private:
 	std::string _filename;
-	size_t getSizes(Directory*);
+	size_t adjustDirectorySizes(Directory*);
 	void drawDirectories(Directory*);
 	int sumDirectories(Directory*, int&);
 	int getDeletedDirectorySize(Directory* cwd, size_t size, size_t& smallest);
+	Directory* buildDirectory();
 };

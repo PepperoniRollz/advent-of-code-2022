@@ -41,7 +41,7 @@ int main() {
 	d6.partTwoSolution();
 	d6.partOneSolution();
 
-	std::cout << "--- Day 6: Tuning Trouble ---" << std::endl;
+	std::cout << "--- Day 7: No Space Left On Device ---" << std::endl;
 	DaySeven d7("./src/data/day-7.txt");
 	d7.partOneSolution();
 	d7.partTwoSolution();
