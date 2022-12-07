@@ -11,18 +11,17 @@ void DayThree::partOneSolution() {
 
 	inFile.open(_filename, std::ios_base::in);
 
-	while (std::getline(inFile, line)) {
-		std::map<char, int> map;
-		for (int i = 0; i < line.length(); i++) {
-			char item = line[i];
-			if (i < line.length() / 2) {
-				map.insert(std::pair<char, int>(item, charToPriority(item)));
-			}
-			else {
-				if (map.count(item)) {
-					sumPriorities += map.at(item);
-					break;
-				}
+	std::getline(inFile, line);
+	std::map<char, int> map;
+	for (int i = 0; i < line.length(); i++) {
+		char item = line[i];
+		if (i < line.length() / 2) {
+			map.insert(std::pair<char, int>(item, charToPriority(item)));
+		}
+		else {
+			if (map.count(item)) {
+				sumPriorities += map.at(item);
+				break;
 			}
 		}
 	}

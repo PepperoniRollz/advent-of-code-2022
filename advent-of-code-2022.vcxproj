@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\days\DaySeven.cpp" />
     <ClCompile Include="src\days\DaySix.cpp" />
     <ClCompile Include="src\days\DayFive.cpp" />
     <ClCompile Include="src\days\DayThree.cpp" />
@@ -27,6 +28,7 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\DaySeven.h" />
     <ClInclude Include="src\headers\DaySix.h" />
     <ClInclude Include="src\headers\DayFive.h" />
     <ClInclude Include="src\data\day-4.txt" />
@@ -46,6 +48,7 @@
     <Text Include="src\data\day-2.txt" />
     <Text Include="src\data\day-5.txt" />
     <Text Include="src\data\day-6.txt" />
+    <Text Include="src\data\day-7.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\days\DayFour.cpp">
