@@ -24,11 +24,11 @@ void DayFive::partOneSolution() {
 
 	inFile.open(_filename, std::ios_base::in);
 	while (std::getline(inFile, line)) {
-		std::stringstream check1(line);
+		std::stringstream ss(line);
 		std::string intermediate;
 		std::vector<std::string> tokens;
 
-		while (std::getline(check1, intermediate, ' ')) {
+		while (std::getline(ss, intermediate, ' ')) {
 			tokens.push_back(intermediate);
 		}
 
@@ -55,11 +55,11 @@ void DayFive::partTwoSolution() {
 
 	inFile.open(_filename, std::ios_base::in);
 	while (std::getline(inFile, line)) {
-		std::stringstream check1(line);
+		std::stringstream ss(line);
 		std::string intermediate;
 		std::vector<std::string> tokens;
 
-		while (std::getline(check1, intermediate, ' ')) {
+		while (std::getline(ss, intermediate, ' ')) {
 			tokens.push_back(intermediate);
 		}
 

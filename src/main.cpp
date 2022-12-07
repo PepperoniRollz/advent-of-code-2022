@@ -8,6 +8,7 @@
 #include "DayFive.h"
 #include "DaySix.h"
 #include "DaySeven.h"
+#include <chrono>
 
 int main() {
 	std::cout << "--- Day 1: Calorie Counting ---" << std::endl;
@@ -43,6 +44,12 @@ int main() {
 
 	std::cout << "--- Day 7: No Space Left On Device ---" << std::endl;
 	DaySeven d7("./src/data/day-7.txt");
+	auto start = std::chrono::high_resolution_clock::now();
 	d7.partOneSolution();
 	d7.partTwoSolution();
+	auto stop = std::chrono::high_resolution_clock::now();
+	auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+
+	std::cout << std::endl << "Time taken by function: "
+		<< duration.count() << " microseconds" << std::endl;
 }
