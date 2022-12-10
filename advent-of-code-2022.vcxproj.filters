@@ -37,6 +37,9 @@
     <ClCompile Include="src\days\DaySeven.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\days\DayEight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\DayOne.h">
@@ -63,6 +66,9 @@
     <ClInclude Include="src\headers\DaySeven.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\headers\DayEight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\data\day-1.txt" />
@@ -71,5 +77,6 @@
     <Text Include="src\data\day-5.txt" />
     <Text Include="src\data\day-6.txt" />
     <Text Include="src\data\day-7.txt" />
+    <Text Include="src\data\day-8.txt" />
   </ItemGroup>
 </Project>

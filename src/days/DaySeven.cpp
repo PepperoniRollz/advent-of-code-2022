@@ -21,7 +21,7 @@ void DaySeven::partTwoSolution() {
 	int size = 30000000 - (70000000 - homeDirectory->_size);
 	size_t smallest = SIZE_MAX;
 	smallest = getDeletedDirectorySize(homeDirectory, size, smallest);
-	std::cout << "day 7-2: " << smallest;
+	std::cout << "day 7-2: " << smallest << std::endl;
 }
 
 size_t DaySeven::adjustDirectorySizes(Directory* cwd) {
