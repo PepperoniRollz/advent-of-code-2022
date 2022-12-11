@@ -10,6 +10,7 @@
 #include "Day07.h"
 #include "Day08.h"
 #include "Day09.h"
+#include "Day10.h"
 #include <chrono>
 void printTime(std::chrono::steady_clock::time_point, std::chrono::steady_clock::time_point);
 std::chrono::steady_clock::time_point start, end;
@@ -85,11 +86,19 @@ int main() {
 	d9.partTwoSolution();
 	end = std::chrono::high_resolution_clock::now();
 	printTime(start, end);
+
+	std::cout << "--- Day 10: Cathode-Ray Tube ---" << std::endl;
+	Day10 d10("./src/data/day-10.txt");
+	start = std::chrono::high_resolution_clock::now();
+	d10.partOneSolution();
+	d10.partTwoSolution();
+	end = std::chrono::high_resolution_clock::now();
+	printTime(start, end);
 };
 
 void printTime(std::chrono::steady_clock::time_point start, std::chrono::steady_clock::time_point end) {
-	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+	auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
 	std::cout << "elapsed time: "
-		<< duration.count() << "ms" << std::endl;
+		<< duration.count() << " microseconds" << std::endl;
 }

@@ -97,5 +97,6 @@
     <Text Include="src\data\day-7.txt" />
     <Text Include="src\data\day-8.txt" />
     <Text Include="src\data\day-9.txt" />
+    <Text Include="src\data\day-10.txt" />
   </ItemGroup>
 </Project>
