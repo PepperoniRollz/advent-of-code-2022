@@ -1,7 +1,7 @@
 #pragma once
-#include <fstream>
 #include <string>
-#include<iostream>
+#include <iostream>
+#include <fstream>
 class DayTwo {
 public:
 	DayTwo(std::string);

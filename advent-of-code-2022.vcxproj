@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\days\RopeSimulator.cpp" />
+    <ClCompile Include="src\days\DayNine.cpp" />
     <ClCompile Include="src\days\DayEight.cpp" />
     <ClCompile Include="src\days\DaySeven.cpp" />
     <ClCompile Include="src\days\DaySix.cpp" />
@@ -29,6 +31,8 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\RopeSimulator.h" />
+    <ClInclude Include="src\headers\DayNine.h" />
     <ClInclude Include="src\headers\DayEight.h" />
     <ClInclude Include="src\headers\DaySeven.h" />
     <ClInclude Include="src\headers\DaySix.h" />
@@ -52,6 +56,7 @@
     <Text Include="src\data\day-6.txt" />
     <Text Include="src\data\day-7.txt" />
     <Text Include="src\data\day-8.txt" />
+    <Text Include="src\data\day-9.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\days\DayFour.cpp">

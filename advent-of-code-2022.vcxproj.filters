@@ -40,6 +40,12 @@
     <ClCompile Include="src\days\DayEight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\days\DayNine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\days\RopeSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\DayOne.h">
@@ -69,6 +75,12 @@
     <ClInclude Include="src\headers\DayEight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\headers\DayNine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\headers\RopeSimulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\data\day-1.txt" />
@@ -78,5 +90,6 @@
     <Text Include="src\data\day-6.txt" />
     <Text Include="src\data\day-7.txt" />
     <Text Include="src\data\day-8.txt" />
+    <Text Include="src\data\day-9.txt" />
   </ItemGroup>
 </Project>

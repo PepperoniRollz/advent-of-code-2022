@@ -1,6 +1,5 @@
 #include "DayTwo.h"
 #include <vector>
-
 DayTwo::DayTwo(std::string filename) : _filename(filename) {}
 
 void DayTwo::partOneSolution() {
