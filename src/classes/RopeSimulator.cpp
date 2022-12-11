@@ -1,5 +1,5 @@
 #include "RopeSimulator.h"
-#include "DayNine.h"
+#include "Day09.h"
 #include<unordered_set>
 RopeSimulator::RopeSimulator(int ropeSize) {
 	for (int i = 0; i < ropeSize; i++) this->rope.push_back(new Knot(0, 0));

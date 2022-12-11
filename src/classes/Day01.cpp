@@ -1,8 +1,8 @@
-#include "DayOne.h"
+#include "Day01.h"
 
-DayOne::DayOne(std::string filename) : _filename(filename) {}
+Day01::Day01(std::string filename) : _filename(filename) {}
 
-void DayOne::partOneSolution() {
+void Day01::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int maxCalories = 0;
@@ -20,7 +20,7 @@ void DayOne::partOneSolution() {
 	std::cout << "Day 1-1: " << maxCalories << std::endl;
 }
 
-void DayOne::partTwoSolution() {
+void Day01::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int first, second, third;

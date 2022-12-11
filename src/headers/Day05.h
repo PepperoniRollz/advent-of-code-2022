@@ -3,9 +3,9 @@
 #include <string>
 #include<iostream>
 #include<vector>
-class DayFive {
+class Day05 {
 public:
-	DayFive(std::string);
+	Day05(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 private:

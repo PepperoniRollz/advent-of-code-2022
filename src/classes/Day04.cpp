@@ -1,11 +1,11 @@
-#include "DayFour.h"
+#include "Day04.h"
 #include <vector>
 #include <sstream>
 #include <string>
 
-DayFour::DayFour(std::string filename) : _filename(filename) {}
+Day04::Day04(std::string filename) : _filename(filename) {}
 
-void DayFour::partOneSolution() {
+void Day04::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int answer = 0;
@@ -21,7 +21,7 @@ void DayFour::partOneSolution() {
 	std::cout << "Day 4-1: " << answer << std::endl;
 }
 
-void DayFour::partTwoSolution() {
+void Day04::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int answer = 0;
@@ -37,19 +37,19 @@ void DayFour::partTwoSolution() {
 	std::cout << "Day 4-2: " << answer << std::endl;
 }
 
-bool DayFour::contains(std::vector<int> tokens) {
+bool Day04::contains(std::vector<int> tokens) {
 	return (tokens.at(0) >= tokens.at(2) && tokens.at(1) <= tokens.at(3)) ||
 		(tokens.at(2) >= tokens.at(0) && tokens.at(3) <= tokens.at(1));
 }
 
-bool DayFour::overlaps(std::vector<int> tokens) {
+bool Day04::overlaps(std::vector<int> tokens) {
 	return (tokens.at(0) <= tokens.at(2) && tokens.at(1) >= tokens.at(2))
 		|| (tokens.at(0) <= tokens.at(3) && tokens.at(1) >= tokens.at(3))
 		|| (tokens.at(2) <= tokens.at(0) && tokens.at(3) >= tokens.at(0))
 		|| (tokens.at(2) <= tokens.at(1) && tokens.at(3) >= tokens.at(1));
 }
 
-void DayFour::tokenizer(std::vector<int>& tokens, std::string line) {
+void Day04::tokenizer(std::vector<int>& tokens, std::string line) {
 	std::stringstream check1(line);
 	std::string withoutCommas;
 	std::string withoutHyphens;

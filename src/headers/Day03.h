@@ -2,9 +2,9 @@
 #include <fstream>
 #include <string>
 #include<iostream>
-class DayThree {
+class Day03 {
 public:
-	DayThree(std::string);
+	Day03(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 private:

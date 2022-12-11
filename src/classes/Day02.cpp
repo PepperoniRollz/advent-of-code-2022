@@ -1,8 +1,8 @@
-#include "DayTwo.h"
+#include "Day02.h"
 #include <vector>
-DayTwo::DayTwo(std::string filename) : _filename(filename) {}
+Day02::Day02(std::string filename) : _filename(filename) {}
 
-void DayTwo::partOneSolution() {
+void Day02::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int opponent;
@@ -25,7 +25,7 @@ void DayTwo::partOneSolution() {
 	std::cout << "Day 2-1: " << score << std::endl;
 }
 
-void DayTwo::partTwoSolution() {
+void Day02::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int opponent;
@@ -54,10 +54,10 @@ void DayTwo::partTwoSolution() {
 	std::cout << "Day 2-2: " << score << std::endl;
 }
 
-bool DayTwo::iWin(int me, int opponent) {
+bool Day02::iWin(int me, int opponent) {
 	return me == (opponent + 1) % 3;
 }
 
-bool DayTwo::tie(int me, int opponent) {
+bool Day02::tie(int me, int opponent) {
 	return me == opponent;
 }

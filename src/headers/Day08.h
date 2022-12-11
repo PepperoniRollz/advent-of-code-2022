@@ -12,9 +12,9 @@ struct Tree {
 	int _height;
 };
 
-class DayEight {
+class Day08 {
 public:
-	DayEight(std::string);
+	Day08(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 private:

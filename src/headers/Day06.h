@@ -1,9 +1,9 @@
 #pragma once
 #include <fstream>
 #include<iostream>
-class DaySix {
+class Day06 {
 public:
-	DaySix(std::string);
+	Day06(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 	void anotherOne();

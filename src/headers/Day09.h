@@ -27,10 +27,10 @@ struct Knot {
 	Position position;
 	Knot(int x, int y) : position(Position(x, y)) {}
 };
-class DayNine
+class Day09
 {
 public:
-	DayNine(std::string);
+	Day09(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 private:

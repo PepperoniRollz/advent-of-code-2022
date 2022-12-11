@@ -1,4 +1,4 @@
-#include "DayFive.h"
+#include "Day05.h"
 #include <vector>
 #include <sstream>
 #include <string>
@@ -13,12 +13,12 @@
 [F] [Q] [S] [C] [G] [G] [Z] [P] [N]
 [Q] [D] [P] [L] [V] [D] [D] [C] [Z]*/
 
-DayFive::DayFive(std::string filename) {
+Day05::Day05(std::string filename) {
 	_filename = filename;
 	initStacks();
 }
 
-void DayFive::partOneSolution() {
+void Day05::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 
@@ -48,7 +48,7 @@ void DayFive::partOneSolution() {
 	std::cout << std::endl;
 }
 
-void DayFive::partTwoSolution() {
+void Day05::partTwoSolution() {
 	resetStacks();
 	std::ifstream inFile;
 	std::string line;
@@ -85,12 +85,12 @@ void DayFive::partTwoSolution() {
 	std::cout << std::endl;
 }
 
-void DayFive::resetStacks() {
+void Day05::resetStacks() {
 	_stacks.clear();
 	initStacks();
 }
 
-void DayFive::initStacks() {
+void Day05::initStacks() {
 	_stacks.push_back(_stack1);
 	_stacks.push_back(_stack2);
 	_stacks.push_back(_stack3);

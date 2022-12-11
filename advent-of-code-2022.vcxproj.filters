@@ -15,70 +15,76 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\days\DayOne.cpp">
+    <ClCompile Include="src\classes\Day01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DayTwo.cpp">
+    <ClCompile Include="src\classes\Day02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DayThree.cpp">
+    <ClCompile Include="src\classes\Day03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DayFour.cpp" />
-    <ClCompile Include="src\days\DayFive.cpp">
+    <ClCompile Include="src\classes\Day04.cpp" />
+    <ClCompile Include="src\classes\Day05.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DaySix.cpp">
+    <ClCompile Include="src\classes\Day06.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DaySeven.cpp">
+    <ClCompile Include="src\classes\Day07.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DayEight.cpp">
+    <ClCompile Include="src\classes\Day08.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\DayNine.cpp">
+    <ClCompile Include="src\classes\Day09.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\days\RopeSimulator.cpp">
+    <ClCompile Include="src\classes\RopeSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\classes\Day10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\headers\DayOne.h">
+    <ClInclude Include="src\headers\Day01.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayTwo.h">
+    <ClInclude Include="src\headers\Day02.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayThree.h">
+    <ClInclude Include="src\headers\Day03.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayFour.h">
+    <ClInclude Include="src\headers\Day04.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\data\day-4.txt">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayFive.h">
+    <ClInclude Include="src\headers\Day05.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DaySix.h">
+    <ClInclude Include="src\headers\Day06.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DaySeven.h">
+    <ClInclude Include="src\headers\Day07.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayEight.h">
+    <ClInclude Include="src\headers\Day08.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\headers\DayNine.h">
+    <ClInclude Include="src\headers\Day09.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\headers\RopeSimulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\headers\Day10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

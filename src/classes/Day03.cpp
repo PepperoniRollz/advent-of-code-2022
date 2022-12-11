@@ -1,10 +1,10 @@
-#include "DayThree.h"
+#include "Day03.h"
 #include <map>
 #include <unordered_set>
 
-DayThree::DayThree(std::string filename) : _filename(filename) {}
+Day03::Day03(std::string filename) : _filename(filename) {}
 
-void DayThree::partOneSolution() {
+void Day03::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int sumPriorities = 0;
@@ -28,7 +28,7 @@ void DayThree::partOneSolution() {
 	std::cout << "Day 3-1: " << sumPriorities << std::endl;
 }
 
-void DayThree::partTwoSolution() {
+void Day03::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 	int sumPriorities = 0;
@@ -63,6 +63,6 @@ void DayThree::partTwoSolution() {
 	std::cout << "Day 3-2: " << sumPriorities << std::endl;
 }
 
-int DayThree::charToPriority(char c) {
+int Day03::charToPriority(char c) {
 	return islower(c) ? c - 96 : c - 38;
 }

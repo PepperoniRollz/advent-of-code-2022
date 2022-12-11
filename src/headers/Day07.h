@@ -11,9 +11,9 @@ struct Directory {
 	std::string _directoryName;
 };
 
-class DaySeven {
+class Day07 {
 public:
-	DaySeven(std::string);
+	Day07(std::string);
 	void partOneSolution();
 	void partTwoSolution();
 

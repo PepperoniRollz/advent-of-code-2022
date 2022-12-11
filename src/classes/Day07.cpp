@@ -1,20 +1,20 @@
-#include "DaySeven.h"
+#include "Day07.h"
 #include <vector>
 #include <sstream>
 #include <string>
 
-DaySeven::DaySeven(std::string filename) {
+Day07::Day07(std::string filename) {
 	_filename = filename;
 }
 
-void DaySeven::partOneSolution() {
+void Day07::partOneSolution() {
 	Directory* homeDirectory = buildDirectory();
 	adjustDirectorySizes(homeDirectory);
 	int sum = 0;
 	std::cout << "Day 7-1: " << sumDirectories(homeDirectory, sum) << std::endl;
 }
 
-void DaySeven::partTwoSolution() {
+void Day07::partTwoSolution() {
 	Directory* homeDirectory = buildDirectory();
 	adjustDirectorySizes(homeDirectory);
 
@@ -24,14 +24,14 @@ void DaySeven::partTwoSolution() {
 	std::cout << "day 7-2: " << smallest << std::endl;
 }
 
-size_t DaySeven::adjustDirectorySizes(Directory* cwd) {
+size_t Day07::adjustDirectorySizes(Directory* cwd) {
 	for (Directory* sub : cwd->_subdirectories) {
 		cwd->_size += adjustDirectorySizes(sub);
 	}
 	return cwd->_size;
 }
 
-void DaySeven::printDirectories(Directory* cwd) {
+void Day07::printDirectories(Directory* cwd) {
 	std::cout << "- " << cwd->_directoryName << " with size: " << cwd->_size << " with parent: ";
 	if (cwd->_parent != nullptr) {
 		std::cout << cwd->_parent->_directoryName;
@@ -45,7 +45,7 @@ void DaySeven::printDirectories(Directory* cwd) {
 	}
 }
 
-int DaySeven::sumDirectories(Directory* cwd, int& sum) {
+int Day07::sumDirectories(Directory* cwd, int& sum) {
 	for (Directory* sub : cwd->_subdirectories) {
 		sum += sumDirectories(sub, sum);
 	}
@@ -58,7 +58,7 @@ int DaySeven::sumDirectories(Directory* cwd, int& sum) {
 	else return 0;
 }
 
-int DaySeven::getDeletedDirectorySize(Directory* cwd, size_t size, size_t& smallest) {
+int Day07::getDeletedDirectorySize(Directory* cwd, size_t size, size_t& smallest) {
 	for (Directory* sub : cwd->_subdirectories) {
 		getDeletedDirectorySize(sub, size, smallest);
 	}
@@ -69,7 +69,7 @@ int DaySeven::getDeletedDirectorySize(Directory* cwd, size_t size, size_t& small
 	return smallest;
 }
 
-Directory* DaySeven::buildDirectory() {
+Directory* Day07::buildDirectory() {
 	std::ifstream inFile;
 	std::string line;
 	Directory* homeDirectory = new Directory("/", nullptr);

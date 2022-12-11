@@ -1,11 +1,11 @@
-#include "DayEight.h"
+#include "Day08.h"
 #include <vector>
 #include <iostream>
 #include <string>
 
-DayEight::DayEight(std::string filename) : _filename(filename) {}
+Day08::Day08(std::string filename) : _filename(filename) {}
 
-void DayEight::partOneSolution() {
+void Day08::partOneSolution() {
 	int numVisible = 0;
 	std::vector<std::vector<Tree*>> forest = readInput();
 
@@ -56,7 +56,7 @@ void DayEight::partOneSolution() {
 	std::cout << "Day 8-1: " << numVisible << std::endl;
 }
 
-void DayEight::partTwoSolution() {
+void Day08::partTwoSolution() {
 	std::vector<std::vector<Tree*>> forest = readInput();
 
 	const int HEIGHT = forest.size();
@@ -117,7 +117,7 @@ void DayEight::partTwoSolution() {
 	std::cout << "Day 8-2: " << maxScenicScore << std::endl;
 }
 
-void DayEight::checkVisibility(Tree* tree, int& max, int& numVisible) {
+void Day08::checkVisibility(Tree* tree, int& max, int& numVisible) {
 	if (tree->_height > max) {
 		max = tree->_height;
 		if (!tree->_visible) {
@@ -126,9 +126,9 @@ void DayEight::checkVisibility(Tree* tree, int& max, int& numVisible) {
 		}
 	}
 }
-int DayEight::scenicScore(int up, int down, int left, int right) { return up * down * left * right; }
+int Day08::scenicScore(int up, int down, int left, int right) { return up * down * left * right; }
 
-std::vector<std::vector<Tree*>> DayEight::readInput() {
+std::vector<std::vector<Tree*>> Day08::readInput() {
 	std::vector<std::vector<Tree*>> forest;
 	std::ifstream inFile;
 	std::string line;

@@ -1,13 +1,13 @@
-#include "DayNine.h"
+#include "Day09.h"
 #include "math.h"
 #include <unordered_set>
 #include <sstream>
 #include <string>
 #include "RopeSimulator.h"
 
-DayNine::DayNine(std::string filename) : _filename(filename) {}
+Day09::Day09(std::string filename) : _filename(filename) {}
 
-void DayNine::partOneSolution() {
+void Day09::partOneSolution() {
 	std::ifstream inFile;
 	std::string line;
 
@@ -31,7 +31,7 @@ void DayNine::partOneSolution() {
 	std::cout << "Day 9-1: " << simulator.visited.size() << std::endl;
 }
 
-void DayNine::partTwoSolution() {
+void Day09::partTwoSolution() {
 	std::ifstream inFile;
 	std::string line;
 
@@ -55,7 +55,7 @@ void DayNine::partTwoSolution() {
 	std::cout << "Day 9-2: " << simulator.visited.size() << std::endl;
 }
 
-Direction DayNine::charToEnum(char c) {
+Direction Day09::charToEnum(char c) {
 	if (c == 'R')
 		return Direction::RIGHT;
 	else if (c == 'D')
