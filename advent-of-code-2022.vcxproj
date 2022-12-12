@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\classes\Day11.cpp" />
     <ClCompile Include="src\classes\Day10.cpp" />
     <ClCompile Include="src\classes\RopeSimulator.cpp" />
     <ClCompile Include="src\classes\Day09.cpp" />
@@ -32,6 +33,7 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\Day11.h" />
     <ClInclude Include="src\headers\Day10.h" />
     <ClInclude Include="src\headers\RopeSimulator.h" />
     <ClInclude Include="src\headers\Day09.h" />
@@ -53,6 +55,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </Text>
     <Text Include="src\data\day-10.txt" />
+    <Text Include="src\data\day-11.txt" />
     <Text Include="src\data\day-3.txt" />
     <Text Include="src\data\day-2.txt" />
     <Text Include="src\data\day-5.txt" />
