@@ -12,6 +12,7 @@
 #include "Day09.h"
 #include "Day10.h"
 #include "Day11.h"
+#include "Day12.h"
 
 #include <chrono>
 void printTime(std::chrono::steady_clock::time_point, std::chrono::steady_clock::time_point);
@@ -104,11 +105,19 @@ int main() {
 	d11.partTwoSolution();
 	end = std::chrono::high_resolution_clock::now();
 	printTime(start, end);
+
+	std::cout << "--- Day 11: Monkey in the Middle ---" << std::endl;
+	Day12 d12("./src/data/day-12.txt");
+	start = std::chrono::high_resolution_clock::now();
+	d12.partOneSolution();
+	d12.partTwoSolution();
+	end = std::chrono::high_resolution_clock::now();
+	printTime(start, end);
 };
 
 void printTime(std::chrono::steady_clock::time_point start, std::chrono::steady_clock::time_point end) {
-	auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
 	std::cout << "elapsed time: "
-		<< duration.count() << " microseconds" << std::endl;
+		<< duration.count() << "ms" << std::endl;
 }

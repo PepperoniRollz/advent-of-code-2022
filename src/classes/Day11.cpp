@@ -1,6 +1,5 @@
 #include "Day11.h"
 #include <cmath>
-#include <unordered_set>
 
 Day11::Day11(std::string filename) : _filename(filename) {
 }
