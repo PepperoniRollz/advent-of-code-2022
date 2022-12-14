@@ -12,6 +12,7 @@ void Day12::partOneSolution() {
 	std::vector<std::tuple<int, int>> startingPositions;
 	std::tuple<int, int> start;
 	std::tuple<int, int> end;
+	int distance;
 
 	inFile.open(_filename);
 	while (std::getline(inFile, line)) {
@@ -23,6 +24,7 @@ void Day12::partOneSolution() {
 	}
 	const int ROWS = map.size();
 	const int COLS = map[0].size();
+	std::vector<std::vector<int> > dist(ROWS, std::vector<int>(COLS, 0)); //each element holds distance from source
 
 	for (int i = 0; i < map.size(); i++) {
 		for (int j = 0; j < map[i].size(); j++) {
@@ -39,10 +41,6 @@ void Day12::partOneSolution() {
 
 	q.push_back(start);
 	visited.insert(start);
-	int distance;
-	std::vector<std::vector<int> > dist(
-		500,
-		std::vector<int>(500, 0));
 	while (!q.empty()) {
 		std::tuple<int, int> cur = q.front();
 		q.pop_front();
@@ -97,10 +95,7 @@ void Day12::partTwoSolution() {
 		std::set<std::tuple<int, int>> visited;
 		q.push_back(startPos);
 		visited.insert(startPos);
-		int shortestPath = INT_MAX;
-		std::vector<std::vector<int> > dist(
-			ROWS,
-			std::vector<int>(COLS, 0));
+		std::vector<std::vector<int> > dist(ROWS, std::vector<int>(COLS, 0)); //each element holds distance from source
 
 		while (!q.empty()) {
 			std::tuple<int, int> cur = q.front();
