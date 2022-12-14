@@ -118,6 +118,5 @@ int main() {
 void printTime(std::chrono::steady_clock::time_point start, std::chrono::steady_clock::time_point end) {
 	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-	std::cout << "elapsed time: "
-		<< duration.count() << "ms" << std::endl;
+	std::cout << "elapsed time: " << duration.count() << "ms" << std::endl;
 }
