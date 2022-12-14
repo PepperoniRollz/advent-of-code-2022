@@ -12,25 +12,9 @@ void Day11::partOneSolution() {
 			Monkey* currentMonkey = monkeys[i];
 			while (!currentMonkey->items.empty()) {
 				uint64_t  currentItem = currentMonkey->items.front();
-				int operand;
 
-				if (currentMonkey->operand == "old") {
-					operand = currentItem;
-				}
-				else {
-					operand = stoi(currentMonkey->operand);
-				}
-
-				switch ((char)currentMonkey->operation) {
-				case '*':
-					currentItem *= operand;
-					break;
-				case'+':
-					currentItem += operand;
-					break;
-				}
-
-				currentItem /= 3;
+				int operand = currentMonkey->operand == "old" ? currentItem : stoi(currentMonkey->operand);
+				currentItem = currentMonkey->operation == '*' ? currentItem * operand / 3 : (currentItem + operand) / 3;
 
 				if (currentItem % currentMonkey->test == 0) {
 					monkeys[currentMonkey->ifTrue]->items.push_back(currentItem);
@@ -64,19 +48,8 @@ void Day11::partTwoSolution() {
 				uint64_t currentItem = currentMonkey->items.front();
 				uint64_t operand;
 
-				if (currentMonkey->operand == "old")
-					operand = currentItem;
-				else
-					operand = stoi(currentMonkey->operand);
-
-				switch (currentMonkey->operation) {
-				case '*':
-					currentItem = (currentItem * operand) % LCM;
-					break;
-				case'+':
-					currentItem = (currentItem + operand) % LCM;
-					break;
-				}
+				operand = currentMonkey->operand == "old" ? currentItem : stoi(currentMonkey->operand);
+				currentItem = currentMonkey->operation == '*' ? (currentItem * operand) % LCM : (currentItem + operand) % LCM;
 
 				if (currentItem % currentMonkey->test == 0)
 					monkeys[currentMonkey->ifTrue]->items.push_back(currentItem);
