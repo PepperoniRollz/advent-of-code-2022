@@ -14,3 +14,4 @@ Day 8 &#11088;&#11088; c++ (~27.5 ms)<br />
 Day 9 &#11088;&#11088; c++ (~100 ms) (went wild with OOP) <br /> 
 Day 10 &#11088;&#11088; c++ (~9 ms) <br /> 
 Day 11 &#11088;&#11088; c++ (~1100 ms) <br /> 
+Day 12 &#11088;&#11088; c++ (~24000 ms) <br /> Probably should've kept track of starting nodes as to not recalculate the BFS from that point for part 2
