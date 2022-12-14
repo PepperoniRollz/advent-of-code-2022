@@ -28,5 +28,5 @@ private:
 	std::ifstream inFile;
 	std::string line;
 	std::vector<Monkey*> parseInput();
-	unsigned long long getModulus(std::vector<Monkey*> monkeys);
+	uint64_t getLCM(std::vector<Monkey*> monkeys);
 };

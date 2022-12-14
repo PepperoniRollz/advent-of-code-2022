@@ -11,7 +11,7 @@ void Day11::partOneSolution() {
 		for (int i = 0; i < monkeys.size(); i++) {
 			Monkey* currentMonkey = monkeys[i];
 			while (!currentMonkey->items.empty()) {
-				unsigned long long  currentItem = currentMonkey->items.front();
+				uint64_t  currentItem = currentMonkey->items.front();
 				int operand;
 
 				if (currentMonkey->operand == "old") {
@@ -55,45 +55,41 @@ void Day11::partOneSolution() {
 
 void Day11::partTwoSolution() {
 	std::vector<Monkey*> monkeys = parseInput();
-	const unsigned long long MODULUS = getModulus(monkeys);
+	const uint64_t LCM = getLCM(monkeys);
 
 	for (int round = 0; round < 10000; round++) {
 		for (int i = 0; i < monkeys.size(); i++) {
 			Monkey* currentMonkey = monkeys[i];
 			while (!currentMonkey->items.empty()) {
-				unsigned long long  currentItem = currentMonkey->items.front();
-				unsigned long long  operand;
+				uint64_t currentItem = currentMonkey->items.front();
+				uint64_t operand;
 
-				if (currentMonkey->operand == "old") {
+				if (currentMonkey->operand == "old")
 					operand = currentItem;
-				}
-				else {
+				else
 					operand = stoi(currentMonkey->operand);
-				}
 
-				switch ((char)currentMonkey->operation) {
+				switch (currentMonkey->operation) {
 				case '*':
-					currentItem = (currentItem * operand) % MODULUS;
-
+					currentItem = (currentItem * operand) % LCM;
 					break;
 				case'+':
-					currentItem = (currentItem + operand) % MODULUS;
+					currentItem = (currentItem + operand) % LCM;
 					break;
 				}
-				if (currentItem % currentMonkey->test == 0) {
+
+				if (currentItem % currentMonkey->test == 0)
 					monkeys[currentMonkey->ifTrue]->items.push_back(currentItem);
-				}
-				else {
+				else
 					monkeys[currentMonkey->ifFalse]->items.push_back(currentItem);
-				}
 
 				currentMonkey->items.pop_front();
 				currentMonkey->numInspected++;
 			}
 		}
 	}
-	unsigned long long max = 0;
-	unsigned long long second = 0;
+	uint64_t max = 0;
+	uint64_t second = 0;
 	for (Monkey* m : monkeys) {
 		if (m->numInspected > max) { second = max;  max = m->numInspected; }
 		else if (m->numInspected < max && m->numInspected > second) second = m->numInspected;
@@ -141,10 +137,10 @@ std::vector<Monkey*> Day11::parseInput() {
 	inFile.close();
 	return monkeys;
 }
-unsigned long long Day11::getModulus(std::vector<Monkey*> monkeys) {
-	unsigned long long modulus = 0;
+uint64_t Day11::getLCM(std::vector<Monkey*> monkeys) {
+	uint64_t lcm = 0;
 	for (Monkey* m : monkeys) {
-		modulus += m->test;
+		lcm += m->test;
 	}
-	return modulus;
+	return lcm;
 }
