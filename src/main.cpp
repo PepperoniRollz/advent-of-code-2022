@@ -106,7 +106,7 @@ int main() {
 	end = std::chrono::high_resolution_clock::now();
 	printTime(start, end);
 
-	std::cout << "--- Day 11: Monkey in the Middle ---" << std::endl;
+	std::cout << "--- Day 12: Hill Climbing Algorithm ---" << std::endl;
 	Day12 d12("./src/data/day-12.txt");
 	start = std::chrono::high_resolution_clock::now();
 	d12.partOneSolution();
